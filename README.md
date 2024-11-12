@@ -1,9 +1,10 @@
 ## medLLM_benchmark
 Benchmark for medical LLM for English, Japanese, and Chinese.
-We provide scripts and Python source files to evaluate the model using this benchmark.
-This tool can evaluate models that are supported by vllm[https://docs.vllm.ai/en/latest/].
 
-### The benchmark is made using the following dataset.
+This repository provides medical QA benchmark datasets for English, Japanese, and Chinese, with scripts and Python source files to evaluate LLM.
+Most models supported by vllm[https://docs.vllm.ai/en/latest/] can be evaluated.
+
+### This benchmark is made using the following dataset.
 
 - en
   - MedQA
