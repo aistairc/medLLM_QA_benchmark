@@ -73,4 +73,5 @@ Usage: sh scripts/evaluate_batch.sh output_dir
 	output_dir:	root dir for results
 ```
 
+If you use this benchmark for evaluation, please site the following paper.
 
