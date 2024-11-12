@@ -18,6 +18,7 @@ The model can be a local checkpoint in development.
   - [IgakuQA](https://arxiv.org/abs/2303.18027)
   - [JJSIMQA](https://arxiv.org/abs/2310.10083)
   - DenQA
+  	- It contains the exam problems from the Japan National Dentistry Examination and their answers in the past two years (from 2023 through 2024) extracted from the official website of the Ministry of Health, Labor and Welfare in Japan (https://www.mhlw.go.jp/stf/english/index.html).
 
 - zh
   - [MedQA](https://arxiv.org/abs/2009.13081)
