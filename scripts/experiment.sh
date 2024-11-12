@@ -21,7 +21,7 @@ LANG=$4
 FEW_SHOTS=$5
 
 # set the number of GPU fro vllm to use
-GPU_NUM=4
+GPU_NUM=1
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ROOT=$SCRIPT_DIR/..

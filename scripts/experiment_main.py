@@ -3,7 +3,7 @@ from utils.tools import read_jsonl, answer2jsonl, check_jsonls
 from generation.hf_vllm import run_hf
 
 
-def main(args, in_file, out_dir=):
+def main(args, in_file, out_dir):
     questions = read_jsonl(in_file)
 
     answers, outputs = run_hf(questions, args)
