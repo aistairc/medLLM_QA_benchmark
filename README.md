@@ -2,7 +2,8 @@
 Benchmark for medical LLM for English, Japanese, and Chinese.
 
 This repository provides medical QA benchmark datasets for English, Japanese, and Chinese, as well as scripts and Python source files to evaluate LLM.
-Most models supported by [vllm](https://docs.vllm.ai/en/latest/) can be evaluated.
+Most hugging face hub models supported by [vllm](https://docs.vllm.ai/en/latest/) can be evaluated.
+The model can be a local checkpoint in development. 
 
 ### This benchmark is made using the following dataset.
 
