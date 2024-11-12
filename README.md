@@ -34,23 +34,36 @@ Usage: sh scripts/experiment.sh json_test_file model_name_or_path output_dir lan
 	json_test_file:		path for input jsonl test
 	model_name_or_path:	model name or path
 	output_dir language:	root dir for results
-	lang:	language of the test file
-	few_shots:	number of shots for in context learning
+	lang:	the language of the test file
+	few_shots:	number of shots for in-context learning
 ``` 
 
 #### Evaluate a single result with a gold answer
 ```
 Usage: sh scripts/evaluate.sh pred_file answer_file
-	pred_file:	path for the jsonl file for prediction
-	answer_file:	path for the jsonl file for answer
+	pred_file:	path for the JSONL file for prediction
+	answer_file:	path for the JSONL file for the answer
 ```
 
 ### Batch mode evaluation
 #### Test all benchmarks with multiple models
+
+To change the models to be used for the experiment, manually edit the script
+**scripts/experiment_batch.sh**
+
+The following snippet shows how to add the model named 'xxxx/yyyy' to experiments.
+
+```
+hf_model_path=xxxx/yyyyy
+model_path+=($hf_model_path)
+```
+
+The following script runs an experiment for all models for each one of the benchmark datasets.
+
 ```
 Usage: sh scripts/experiment_batch.sh output_dir few_shots
 	output_dir:	root dir for results
-	few_shots:	number of shots for in context learning
+	few_shots:	number of shots for in-context learning
 ```
 #### Evaluate all results with gold answers
 ```
