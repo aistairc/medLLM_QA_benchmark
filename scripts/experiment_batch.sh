@@ -70,7 +70,7 @@ for mpath in "${model_path[@]}"; do
     
         # experiment.sh json_test_file model_name_or_path output_dir language few_shots
         echo "sh $SCRIPT_DIR/experiment.sh $infile $mpath $OUT_DIR $lang $FEW_SHOTS"
-        #sh $SCRIPT_DIR/experiment.sh $infile $mpath $OUT_DIR $lang $FEW_SHOTS
+        sh $SCRIPT_DIR/experiment.sh $infile $mpath $OUT_DIR $lang $FEW_SHOTS
         echo "done"
     done
 done
