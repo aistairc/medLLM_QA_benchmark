@@ -1,27 +1,27 @@
 ## medLLM_benchmark
 Benchmark for medical LLM for English, Japanese, and Chinese.
 
-This repository provides medical QA benchmark datasets for English, Japanese, and Chinese, with scripts and Python source files to evaluate LLM.
-Most models supported by vllm[https://docs.vllm.ai/en/latest/] can be evaluated.
+This repository provides medical QA benchmark datasets for English, Japanese, and Chinese, as well as scripts and Python source files to evaluate LLM.
+Most models supported by [vllm](https://docs.vllm.ai/en/latest/) can be evaluated.
 
 ### This benchmark is made using the following dataset.
 
 - en
-  - MedQA
-  - MedQA-4op
-  - MMLU
-  - MedMCQA
-  - PubMedQA
+  - [MedQA](https://arxiv.org/abs/2009.13081)
+  - [MedQA-4op](https://arxiv.org/abs/2009.13081)
+  - [MMLU](https://arxiv.org/abs/2009.03300)
+  - [MedMCQA](https://proceedings.mlr.press/v174/pal22a.html)
+  - [PubMedQA](https://doi.org/10.18653/v1/D19-1259)
 
 - ja
-  - IgakuQA
-  - JJSIMQA
+  - [IgakuQA](https://arxiv.org/abs/2303.18027)
+  - [JJSIMQA](https://arxiv.org/abs/2310.10083)
   - DenQA
 
 - zh
-  - MedQA
-  - MedQA-4op
-  - CMExam
+  - [MedQA](https://arxiv.org/abs/2009.13081)
+  - [MedQA-4op](https://arxiv.org/abs/2009.13081)
+  - [CMExam](https://arxiv.org/abs/2306.03030)
 
         
 ### How to evaluate the model using this benchmark
