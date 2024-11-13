@@ -7,20 +7,20 @@ The model can be a local checkpoint in development.
 
 ### This benchmark is made using the following dataset.
 
-- en
+- en (English)　
   - [MedQA](https://arxiv.org/abs/2009.13081)
   - [MedQA-4op](https://arxiv.org/abs/2009.13081)
   - [MMLU](https://arxiv.org/abs/2009.03300)
   - [MedMCQA](https://proceedings.mlr.press/v174/pal22a.html)
   - [PubMedQA](https://doi.org/10.18653/v1/D19-1259)
 
-- ja
+- ja (Japanese)
   - [IgakuQA](https://arxiv.org/abs/2303.18027)
   - [JJSIMQA](https://arxiv.org/abs/2310.10083)
   - DenQA
   	- It contains the exam problems from the Japan National Dentistry Examination and their answers in the past two years (from 2023 through 2024) extracted from the official website of the Ministry of Health, Labor and Welfare in Japan (https://www.mhlw.go.jp/stf/english/index.html).
 
-- zh
+- zh (Chinese)
   - [MedQA](https://arxiv.org/abs/2009.13081)
   - [MedQA-4op](https://arxiv.org/abs/2009.13081)
   - [CMExam](https://arxiv.org/abs/2306.03030)
