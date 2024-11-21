@@ -29,7 +29,7 @@ for predfile in $pred_files; do
     echo "gold_file: $goldfile"
     # sh evaluate.sh pred_file answer_file"
     echo "sh evaluate.sh $predfile $goldfile"
-    sh evaluate.sh $predfile $goldfile
+    bash $SCRIPT_DIR/evaluate.sh $predfile $goldfile
     echo "done"
 
 done
