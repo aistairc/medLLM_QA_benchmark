@@ -17,7 +17,7 @@ def run_hf(questions, args):
     llm = LLM(model=args.hf_model_path,
             trust_remote_code=True,
             tensor_parallel_size=args.vllm_paralell,
-            dtype="half",
+            dtype='float16',
             max_model_len=None)
             #max_model_len=8192)
 
