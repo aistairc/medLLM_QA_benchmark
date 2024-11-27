@@ -85,7 +85,11 @@ def dict2problem(dict_input, lang, demo):
 
 def dict2problem_JA(dict_input, demo=True):
 
-    problem = "問題: " + dict_input['problem_text']
+    if 'context' in dict_input:
+        problem = "背景: " + dict_input['context'] + '\n' +  "問題: " + dict_input['problem_text']
+    else:
+        problem = "問題: " + dict_input['problem_text']
+
     choices = dict_input['choices']
     answer = dict_input['answer']
     if len(choices) > 0:
@@ -102,7 +106,11 @@ def dict2problem_JA(dict_input, demo=True):
 
 def dict2problem_EN(dict_input, demo=True):
 
-    problem = "Question: " + dict_input['problem_text']
+    if 'context' in dict_input:
+        problem = "Context: " + dict_input['context'] + '\n' +  "Question: " + dict_input['problem_text']
+    else:
+        problem = "Question: " + dict_input['problem_text']
+
     choices = dict_input['choices']
     answer = dict_input['answer']
     if len(choices) > 0:
@@ -118,7 +126,11 @@ def dict2problem_EN(dict_input, demo=True):
 
 def dict2problem_ZH(dict_input, demo=True):
 
-    problem = "问题: " + dict_input['problem_text']
+    if 'context' in dict_input:
+        problem = "背景: " + dict_input['context'] + '\n' + "问题: " + dict_input['problem_text']
+    else:
+        problem = "问题: " + dict_input['problem_text']
+
     choices = dict_input['choices']
     answer = dict_input['answer']
     if len(choices) > 0:
