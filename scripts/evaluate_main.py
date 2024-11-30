@@ -2,6 +2,8 @@ import argparse, os
 import unicodedata
 from utils.tools import read_jsonl, answer2jsonl, check_jsonls
 
+import pdb
+
 def main(pred_file, gold_file):
 
 
@@ -18,8 +20,9 @@ def main(pred_file, gold_file):
 
     check_jsonls(preds, golds)
     results = accuracy(preds, golds)
+
     print(results)
-    print(f"@@\t{mname}\t{lang}\t{dname}\t{results["accuracy"]}\t{results["accuracy"]:.2f}")
+    print(f"@@\t{mname}\t{lang}\t{dname}\t{results['accuracy']}\t{results['accuracy']:.2f}")
 
 
 def accuracy(preds, golds):
