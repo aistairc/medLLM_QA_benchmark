@@ -32,7 +32,7 @@ MedQA(MIT),MMLU(MIT),MedMCQA(MIT),PubMedQA (MIT), CMExam(Apach-2.0), JJISMQA(cc-
   - [CMExam](https://arxiv.org/abs/2306.03030) (./data/zh/CMExam/cmexam.jsonl)
 
         
-### How to evaluate the model using this benchmark
+### How to evaluate the medical LLMs using this benchmark
 
 ### <ins>Interactive evaluation</ins>
 
