@@ -7,6 +7,10 @@ The model on the hugging face hub or locally stored checkpoint can be used for e
 
 ### This benchmark is made using the following dataset.
 
+Please abide by the original license for each benchmark.
+MedQA(MIT),MMLU(MIT),MedMCQA(MIT),PubMedQA (MIT), CMExam(Apach-2.0), JJISMQA(cc-by-nc-sa-4.00).
+
+
 - en (English)　
   - [MedQA](https://arxiv.org/abs/2009.13081)
   - [MedQA-4op](https://arxiv.org/abs/2009.13081)
