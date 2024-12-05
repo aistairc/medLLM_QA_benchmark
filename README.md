@@ -14,22 +14,22 @@ MedQA(MIT),MMLU(MIT),MedMCQA(MIT),PubMedQA (MIT), CMExam(Apach-2.0), JJISMQA(cc-
 
 
 - en (English)　
-  - [MedQA](https://arxiv.org/abs/2009.13081)
-  - [MedQA-4op](https://arxiv.org/abs/2009.13081)
-  - [MMLU](https://arxiv.org/abs/2009.03300)
-  - [MedMCQA](https://proceedings.mlr.press/v174/pal22a.html)
-  - [PubMedQA](https://doi.org/10.18653/v1/D19-1259)
+  - [MedQA](https://arxiv.org/abs/2009.13081) (./data/en/MedQA/medqa_en.jsonl)
+  - [MedQA-4op](https://arxiv.org/abs/2009.13081) (./data/en/MedQA-4op/medqa_en_4op.jsonl)
+  - [MMLU](https://arxiv.org/abs/2009.03300)  (./data/en/MMLU/mmluen_en_medical.jsonl)
+  - [MedMCQA](https://proceedings.mlr.press/v174/pal22a.html)  (./data/en/MedMCQA/medmcqa.jsonl)
+  - [PubMedQA](https://doi.org/10.18653/v1/D19-1259)  (./data/en/PubMedQA/pubmedqa.jsonl)
 
 - ja (Japanese)
-  - [IgakuQA](https://arxiv.org/abs/2303.18027)
-  - [JJSIMQA](https://arxiv.org/abs/2310.10083)
-  - DenQA
+  - [IgakuQA](https://arxiv.org/abs/2303.18027) (./data/ja/IgakuQA/igakuqa.jsonl)
+  - [JJSIMQA](https://arxiv.org/abs/2310.10083) (./data/ja/JJSIMQA/jjsimqa.jsonl)
+  - DenQA (./data/ja/DenQA/denqa.jsonl)
   	- It contains the exam problems from the Japan National Dentistry Examination and their answers in the past two years (from 2023 through 2024) extracted from the official website of the Ministry of Health, Labor and Welfare in Japan (https://www.mhlw.go.jp/stf/english/index.html).
 
 - zh (Chinese)
-  - [MedQA](https://arxiv.org/abs/2009.13081)
-  - [MedQA-4op](https://arxiv.org/abs/2009.13081)
-  - [CMExam](https://arxiv.org/abs/2306.03030)
+  - [MedQA](https://arxiv.org/abs/2009.13081) (./data/zh/MedQA/medqa_zh.jsonl)
+  - [MedQA-4op](https://arxiv.org/abs/2009.13081) (./data/zh/MedQA-4op/medqa_zh_4op.jsonl)
+  - [CMExam](https://arxiv.org/abs/2306.03030) (./data/zh/CMExam/cmexam.jsonl)
 
         
 ### How to evaluate the model using this benchmark
