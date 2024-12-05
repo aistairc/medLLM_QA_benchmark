@@ -74,4 +74,12 @@ Usage: sh scripts/evaluate_batch.sh output_dir
 ```
 
 If you use this benchmark for evaluation, please site the following paper.
-
+```
+@article{published_papers/48577159,
+title = {ELAINE-medLLM: Lightweight English Japanese Chinese Trilingual Large Language Model for Bio-medical Domain (To appear)},
+author = {Ken Yano and Zheheng Luo and Jimin Huang and Qianqian Xie and Masaki Asada and Chenhan Yuan and Kailai Yang and Makoto Miwa and Sophia Ananiadou and Jun'ichi Tsujii},
+journal = {The 31st International Conference on Computational Linguistics (COLING 2025)},
+month = {1},
+year = {2025}
+}
+```
