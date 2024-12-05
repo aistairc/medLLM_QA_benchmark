@@ -55,13 +55,13 @@ Usage: sh scripts/evaluate.sh pred_file answer_file
 
 ### <ins>Batch mode evaluation</ins>
 
-#### Test all benchmarks with multiple models
+#### Test all benchmarks with multiple LLM models
 
-To change the models to be used for the experiment, manually edit the script
+To change the LLM models to be used for the experiment, manually edit the script
 **scripts/experiment_batch.sh**
 
-The following snippet shows how to add the model named 'xxxx/yyyy' to experiments.
-If you'd like to remove a model from evaluation, comment out the model declaration.
+The following snippet shows how to add the LLM model named 'xxxx/yyyy' to experiments.
+If you'd like to remove a LLM model from evaluation, comment out the model declaration.
 
 ```
 hf_model_path=xxxx/yyyyy
