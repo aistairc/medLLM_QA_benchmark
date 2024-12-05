@@ -2,8 +2,8 @@
 Trilingual medical QA benchmark for English, Japanese, and Chinese.
 
 This repository provides medical QA benchmark datasets for English, Japanese, and Chinese, as well as scripts and Python source files to evaluate LLM.
-Most hugging face hub models supported by [vllm](https://docs.vllm.ai/en/latest/) can be evaluated.
-The models on the hugging face hub or locally stored checkpoint can be used for evaluation.
+Any LLM models supported by [vllm](https://docs.vllm.ai/en/latest/) can be evaluated.
+We have checked those models on the hugging face hub, but a locally stored checkpoint can also be used for evaluation.
 
 ### This benchmark set is made using the following dataset.
 
@@ -77,7 +77,7 @@ Usage: sh scripts/evaluate_batch.sh output_dir
 	output_dir:	root dir for results
 ```
 
-If you use this benchmark for evaluation, please site the following paper.
+If you use this medical QA benchmark for evaluation, please cite the following paper.
 ```
 @article{published_papers/48577159,
 title = {ELAINE-medLLM: Lightweight English Japanese Chinese Trilingual Large Language Model for Bio-medical Domain (To appear)},
