@@ -32,7 +32,7 @@ MedQA(MIT),MMLU(MIT),MedMCQA(MIT),PubMedQA (MIT), CMExam(Apach-2.0), JJISMQA(cc-
         
 ### How to evaluate the model using this benchmark
 
-### Interactive evaluation
+### <ins>Interactive evaluation</ins>
 
 #### Test a single benchmark with a model
 ```
@@ -51,13 +51,15 @@ Usage: sh scripts/evaluate.sh pred_file answer_file
 	answer_file:	path for the JSONL file for the answer
 ```
 
-### Batch mode evaluation
+### <ins>Batch mode evaluation</ins>
+
 #### Test all benchmarks with multiple models
 
 To change the models to be used for the experiment, manually edit the script
 **scripts/experiment_batch.sh**
 
 The following snippet shows how to add the model named 'xxxx/yyyy' to experiments.
+If you'd like to remove a model from evaluation, simply comment out the model declaration.
 
 ```
 hf_model_path=xxxx/yyyyy
@@ -77,7 +79,7 @@ Usage: sh scripts/evaluate_batch.sh output_dir
 	output_dir:	root dir for results
 ```
 
-If you use this medical QA benchmark for evaluation, please cite the following paper.
+If you use this medical QA benchmark for evaluation, I ask that you please cite the following paper.
 ```
 @article{published_papers/48577159,
 title = {ELAINE-medLLM: Lightweight English Japanese Chinese Trilingual Large Language Model for Bio-medical Domain (To appear)},
