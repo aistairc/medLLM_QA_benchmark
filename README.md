@@ -37,18 +37,18 @@ MedQA(MIT),MMLU(MIT),MedMCQA(MIT),PubMedQA (MIT), CMExam(Apach-2.0), JJISMQA(cc-
 #### Test a single benchmark with a model
 ```
 Usage: sh scripts/experiment.sh json_test_file model_name_or_path output_dir language few_shots
-	json_test_file:		path for input jsonl test
+	json_test_file:		file path to the input JSON file
 	model_name_or_path:	model name or path
-	output_dir language:	root dir for results
-	lang:	the language of the test file
+	output_dir:	root dir for results
+	lang:	the language of the benchmark
 	few_shots:	number of shots for in-context learning
 ``` 
 
 #### Evaluate a single result with a gold answer
 ```
 Usage: sh scripts/evaluate.sh pred_file answer_file
-	pred_file:	path for the JSONL file for prediction
-	answer_file:	path for the JSONL file for the answer
+	pred_file:	file path to the JSON file generated under the output_dir
+	answer_file:	file path to the input JSON file used for evaluation 
 ```
 
 ### <ins>Batch mode evaluation</ins>
@@ -59,7 +59,7 @@ To change the models to be used for the experiment, manually edit the script
 **scripts/experiment_batch.sh**
 
 The following snippet shows how to add the model named 'xxxx/yyyy' to experiments.
-If you'd like to remove a model from evaluation, simply comment out the model declaration.
+If you'd like to remove a model from evaluation, comment out the model declaration.
 
 ```
 hf_model_path=xxxx/yyyyy
@@ -79,6 +79,14 @@ Usage: sh scripts/evaluate_batch.sh output_dir
 	output_dir:	root dir for results
 ```
 
+### Convert evaluation results to a CSV file
+You can convert the evaluation log to a compact CSV file using the following script.
+```
+sh scripts/evaluate_batch.sh output_dir > log
+cat log | grep @@ > results.csv
+```
+
+### Remark
 If you use this medical QA benchmark for evaluation, I ask that you please cite the following paper.
 ```
 @article{published_papers/48577159,
