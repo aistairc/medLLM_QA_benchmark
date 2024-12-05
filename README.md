@@ -3,9 +3,9 @@ Trilingual medical QA benchmark for English, Japanese, and Chinese.
 
 This repository provides medical QA benchmark datasets for English, Japanese, and Chinese, as well as scripts and Python source files to evaluate LLM.
 Most hugging face hub models supported by [vllm](https://docs.vllm.ai/en/latest/) can be evaluated.
-The model on the hugging face hub or locally stored checkpoint can be used for evaluation.
+The models on the hugging face hub or locally stored checkpoint can be used for evaluation.
 
-### This benchmark is made using the following dataset.
+### This benchmark set is made using the following dataset.
 
 Please abide by the original license for each benchmark.
 MedQA(MIT),MMLU(MIT),MedMCQA(MIT),PubMedQA (MIT), CMExam(Apach-2.0), JJISMQA(cc-by-nc-sa-4.00).
