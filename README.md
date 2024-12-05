@@ -1,4 +1,4 @@
-## medLLM_benchmark
+## medLLM_QA_benchmark
 Trilingual medical QA benchmark for English, Japanese, and Chinese.
 
 This repository provides medical QA benchmark datasets for English, Japanese, and Chinese, as well as scripts and Python source files to evaluate LLM.
