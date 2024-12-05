@@ -1,7 +1,9 @@
 ## medLLM_QA_benchmark
 Trilingual medical QA benchmark for English, Japanese, and Chinese.
 
-This repository provides medical QA benchmark datasets for English, Japanese, and Chinese, as well as scripts and Python source files to evaluate LLM.
+This repository is made to evaluate [ELAINE-medLLM](https://huggingface.co/kenyano/ELAINE-medLLM), [ELAINE-medLLM-instruct](https://huggingface.co/kenyano/ELAINE-medLLM-instruct), a lightweight English-Japanese-Chinese trilingual large language model for the Biomedical Domain.
+It contains a wide range of medical QA benchmarks for three languages and provides scripts and Python source files for evaluating LLM.
+The evaluation method uses a consistent language-dependent input format to evaluate medical LLM on all benchmarks.
 Any LLM models supported by [vllm](https://docs.vllm.ai/en/latest/) can be evaluated.
 We have checked those models on the hugging face hub, but a locally stored checkpoint can also be used for evaluation.
 
