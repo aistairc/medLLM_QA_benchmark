@@ -83,7 +83,7 @@ Usage: sh scripts/evaluate_batch.sh output_dir
 	output_dir:	root dir for results
 ```
 
-### Convert evaluation results to a CSV file
+### Convert the evaluation result log to a CSV file
 Using the following script, you can convert the evaluation log to a compact CSV file.
 ```
 sh scripts/evaluate_batch.sh output_dir > log
