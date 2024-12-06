@@ -57,6 +57,7 @@ def accuracy(preds, golds):
             score += points
         count += 1
         total += points
+
     return {'accuracy': correct/count * 100, 'score': score, 'total': total}
 
 

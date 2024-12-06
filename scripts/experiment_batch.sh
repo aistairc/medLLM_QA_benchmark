@@ -22,12 +22,11 @@ FEW_SHOTS=$2
 model_path=()
 
 #Llama3
-hf_model_path=meta-llama/Meta-Llama-3-8B-Instruct
-model_path+=($hf_model_path)
-
 hf_model_path=meta-llama/Meta-Llama-3-8B
 model_path+=($hf_model_path)
 
+hf_model_path=meta-llama/Meta-Llama-3-8B-Instruct
+model_path+=($hf_model_path)
 
 #Llama2
 hf_model_path=meta-llama/Llama-2-7b-hf
@@ -37,16 +36,15 @@ hf_model_path=meta-llama/Llama-2-7b-chat-hf
 model_path+=($hf_model_path)
 
 # google gemma
-f_model_path=google/gemma-7b
+hf_model_path=google/gemma-7b
 model_path+=($hf_model_path)
 
-f_model_path=google/gemma-7b-it
+hf_model_path=google/gemma-7b-it
 model_path+=($hf_model_path)
 
 # Meditron
 hf_model_path=epfl-llm/meditron-7b
 model_path+=($hf_model_path)
-
 
 # llama3-swalow
 hf_model_path=tokyotech-llm/Llama-3-Swallow-8B-v0.1
@@ -56,27 +54,25 @@ model_path+=($hf_model_path)
 hf_model_path=tokyotech-llm/Llama-3-Swallow-8B-Instruct-v0.1
 model_path+=($hf_model_path)
 
-
+# OpenBioLLM
 hf_model_path=aaditya/Llama3-OpenBioLLM-8B
 model_path+=($hf_model_path)
 
-hf_model_path=Flmc/DISC-MedLLM
-model_path+=($hf_model_path)
-
-hf_model_path=Henrychur/MMed-Llama-3-8B
-model_path+=($hf_model_path)
-
+# medalpaca
 hf_model_path=medalpaca/medalpaca-7b
 model_path+=($hf_model_path)
 
+# Apollo
 hf_model_path=FreedomIntelligence/Apollo-7B
 model_path+=($hf_model_path)
 
-#hf_model_path=kenyano/ELAINE-medLLM
-#model_path+=($hf_model_path)
+# ELAINE-medLLM
+hf_model_path=kenyano/Llama3-ELAINE-medLLM-8B
+model_path+=($hf_model_path)
 
-#hf_model_path=kenyano/ELAINE-medLLM-instruct
-#model_path+=($hf_model_path)
+# ELAINE-medLLM-instruct
+hf_model_path=kenyano/Llama3-ELAINE-medLLM-instruct-8B
+model_path+=($hf_model_path)
 
 infiles=`find $ROOT/data -type f -name \*jsonl`
 

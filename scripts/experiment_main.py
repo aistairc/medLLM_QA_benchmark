@@ -17,9 +17,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(allow_abbrev=False)
 
     parser.add_argument('--in-file', type=str, metavar='N',
-                        default='../data/2022/116-A.jsonl', help='input jsonl file')
+                        default='../data/en/MedQA/medqa-en.jsonl', help='input jsonl file')
     parser.add_argument('--out-dir', type=str, metavar='N',
-                        default='../baseline_results/', help='baseline results output')
+                        default='../results/', help='results output')
     parser.add_argument('--hf_model_path', type=str, metavar='N',
                         default='', help='hf model path')
     parser.add_argument('--vllm_paralell', default=8, type=int, help='vllm tensor parallel')
