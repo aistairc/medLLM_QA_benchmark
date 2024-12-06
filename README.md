@@ -12,6 +12,7 @@ We have checked those models on the hugging face hub, but a locally stored check
 Please abide by the original license for each benchmark.
 MedQA(MIT),MMLU(MIT),MedMCQA(MIT),PubMedQA (MIT), CMExam(Apach-2.0), JJISMQA(cc-by-nc-sa-4.00).
 
+If the original QA benchmark contains splits for training, validation, and testing, we used only the testing split.
 
 - en (English)　
   - [MedQA](https://arxiv.org/abs/2009.13081) (./data/en/MedQA/medqa_en.jsonl)
@@ -21,7 +22,8 @@ MedQA(MIT),MMLU(MIT),MedMCQA(MIT),PubMedQA (MIT), CMExam(Apach-2.0), JJISMQA(cc-
   - [PubMedQA](https://doi.org/10.18653/v1/D19-1259)  (./data/en/PubMedQA/pubmedqa.jsonl)
 
 - ja (Japanese)
-  - [IgakuQA](https://arxiv.org/abs/2303.18027) (./data/ja/IgakuQA/igakuqa.jsonl)
+  - [IgakuQA](https://github.com/jungokasai/IgakuQA) (./data/ja/IgakuQA/igakuqa.jsonl)
+  	- We concatenate the original exam data from 2018 to 2022 into a single JSON file.
   - [JJSIMQA](https://arxiv.org/abs/2310.10083) (./data/ja/JJSIMQA/jjsimqa.jsonl)
   - DenQA (./data/ja/DenQA/denqa.jsonl)
   	- It contains the exam problems from the Japan National Dentistry Examination and their answers in the past two years (from 2023 through 2024) extracted from the official website of the Ministry of Health, Labor and Welfare in Japan (https://www.mhlw.go.jp/stf/english/index.html).
