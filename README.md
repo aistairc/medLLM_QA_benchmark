@@ -1,9 +1,9 @@
 ## medLLM_QA_benchmark
 Trilingual medical QA benchmark for English, Japanese, and Chinese.
 
-This repository is made to evaluate [ELAINE-medLLM](https://huggingface.co/kenyano/Llama3-ELAINE-medLLM-8B), [ELAINE-medLLM-instruct](https://huggingface.co/kenyano/Llama3-ELAINE-medLLM-instruct-8B), a lightweight English-Japanese-Chinese trilingual large language model for the Biomedical Domain, against various baseline LLMs.
-It contains various medical QA benchmarks in the bio-medical domain for three languages and provides scripts and Python source files for evaluating LLM.
-The evaluation method uses a consistent language-dependent input format to evaluate medical LLM on all benchmarks.
+This benchmark set is made to evaluate [ELAINE-medLLM](https://huggingface.co/kenyano/Llama3-ELAINE-medLLM-8B), [ELAINE-medLLM-instruct](https://huggingface.co/kenyano/Llama3-ELAINE-medLLM-instruct-8B), a lightweight English-Japanese-Chinese trilingual large language model for the Biomedical Domain, against various baseline LLMs.
+It contains various QA benchmarks in the bio-medical domain for three languages and provides scripts and Python source files for evaluation.
+The evaluation method uses a consistent benchmark-independent and language-dependent input format to evaluate models.
 Any LLM models supported by [vllm](https://docs.vllm.ai/en/latest/) can be evaluated.
 We have checked those models on the hugging face hub, but a locally stored checkpoint can also be used for evaluation.
 
@@ -12,7 +12,7 @@ We have checked those models on the hugging face hub, but a locally stored check
 Please abide by the original license for each benchmark.
 MedQA(MIT),MMLU(MIT),MedMCQA(MIT),PubMedQA (MIT), CMExam(Apach-2.0), JJISMQA(cc-by-nc-sa-4.00).
 
-If the original QA benchmark contains splits for training, validation, and testing, we used only the testing split.
+If the original QA benchmark contains training, validation, and testing splits, we used only the testing split.
 
 - en (English)　
   - [MedQA](https://arxiv.org/abs/2009.13081) (./data/en/MedQA/medqa_en.jsonl)
