@@ -1,7 +1,7 @@
 ## medLLM_QA_benchmark
 Trilingual medical QA benchmark for English, Japanese, and Chinese.
 
-This benchmark set is made to evaluate [ELAINE-medLLM](https://huggingface.co/kenyano/Llama3-ELAINE-medLLM-8B), [ELAINE-medLLM-instruct](https://huggingface.co/kenyano/Llama3-ELAINE-medLLM-instruct-8B), a lightweight English-Japanese-Chinese trilingual large language model for the Biomedical Domain, against various baseline LLMs.
+This benchmark set is made to evaluate [Llama3-ELAINE-medLLM-8B](https://huggingface.co/kenyano/Llama3-ELAINE-medLLM-8B), [Llama3-ELAINE-medLLM-instruct-8B](https://huggingface.co/kenyano/Llama3-ELAINE-medLLM-instruct-8B), a lightweight English-Japanese-Chinese trilingual large language model for the Biomedical Domain, against various baseline LLMs.
 It contains various QA benchmarks in the bio-medical domain for three languages and provides scripts and Python source files for evaluation.
 The evaluation method uses a consistent benchmark-independent and language-dependent input format to evaluate models.
 Any LLM models supported by [vllm](https://docs.vllm.ai/en/latest/) can be evaluated.
