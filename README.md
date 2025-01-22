@@ -90,14 +90,33 @@ sh scripts/evaluate_batch.sh output_dir > log
 cat log | grep @@ > results.csv
 ```
 
-### Remark
-If you use this medical QA benchmark for evaluation, I ask that you please cite the following paper.
+### Citation
+If you use this medical QA benchmark for evaluation, please cite the following paper.
 ```
-@article{published_papers/48577159,
-title = {ELAINE-medLLM: Lightweight English Japanese Chinese Trilingual Large Language Model for Bio-medical Domain (To appear)},
-author = {Ken Yano and Zheheng Luo and Jimin Huang and Qianqian Xie and Masaki Asada and Chenhan Yuan and Kailai Yang and Makoto Miwa and Sophia Ananiadou and Jun'ichi Tsujii},
-journal = {The 31st International Conference on Computational Linguistics (COLING 2025)},
-month = {1},
-year = {2025}
+@inproceedings{yano-etal-2025-elaine,
+    title = "{ELAINE}-med{LLM}: Lightweight {E}nglish {J}apanese {C}hinese Trilingual Large Language Model for Bio-medical Domain",
+    author = "Yano, Ken  and
+      Luo, Zheheng  and
+      Huang, Jimin  and
+      Xie, Qianqian  and
+      Asada, Masaki  and
+      Yuan, Chenhan  and
+      Yang, Kailai  and
+      Miwa, Makoto  and
+      Ananiadou, Sophia  and
+      Tsujii, Jun{'}ichi",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.313/",
+    pages = "4670--4688",
 }
 ```
